@@ -1,19 +1,26 @@
-# --- Core ---
+# --- Core Framework ---
 fastapi
 uvicorn[standard]
 python-socketio
-python-multipart
+pydantic
+pydantic-settings
 
-# --- Database & ODM ---
-motor
-beanie          # <--- Mới thêm cái này
-dnspython       # Bắt buộc để kết nối MongoDB Atlas
+# --- Upload & Cloudinary ---
+python-multipart
+cloudinary==1.44.1
+requests
+urllib3
 
 # --- Utilities ---
 python-dotenv
-pydantic
-pydantic-settings
-requests
-cloudinary==1.44.1
+typing-extensions
 aiofiles
 jinja2
+
+# --- Validation (MỚI THÊM CÁI NÀY) ---
+email-validator
+
+# --- Database & ODM ---
+motor
+beanie
+dnspython

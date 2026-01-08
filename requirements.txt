@@ -1,28 +1,23 @@
-# --- Core Framework ---
+# --- Security & Auth ---
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt==4.0.1           # <--- QUAN TRỌNG: Phải gán cứng bản này
+email-validator
+
+# --- Các thư viện khác giữ nguyên ---
 fastapi
 uvicorn[standard]
 python-socketio
 pydantic
 pydantic-settings
-
-# --- Security & Auth (THÊM MỚI PHẦN NÀY) ---
-python-jose[cryptography]
-passlib[bcrypt]
-email-validator
-
-# --- Upload & Cloudinary ---
 python-multipart
 cloudinary==1.44.1
 requests
 urllib3
-
-# --- Utilities ---
 python-dotenv
 typing-extensions
 aiofiles
 jinja2
-
-# --- Database & ODM ---
 motor
 beanie
 dnspython

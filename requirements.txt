@@ -5,6 +5,11 @@ python-socketio
 pydantic
 pydantic-settings
 
+# --- Security & Auth (THÊM MỚI PHẦN NÀY) ---
+python-jose[cryptography]
+passlib[bcrypt]
+email-validator
+
 # --- Upload & Cloudinary ---
 python-multipart
 cloudinary==1.44.1
@@ -16,9 +21,6 @@ python-dotenv
 typing-extensions
 aiofiles
 jinja2
-
-# --- Validation (MỚI THÊM CÁI NÀY) ---
-email-validator
 
 # --- Database & ODM ---
 motor
